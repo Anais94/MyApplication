@@ -1,0 +1,125 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/grilleGenerale"
+    android:orientation="vertical"
+    android:background="#ffffe3c0">
+<TextView
+    android:id="@+id/textePrincipal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Rechercher une recette"
+    android:textColor="#ffff1e29"
+    android:gravity="center"
+   android:textSize="35sp"
+    android:textStyle="bold"
+    android:layout_marginTop="20sp"
+    />
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/grilleIng"
+    android:layout_below="@+id/textePrincipal" >
+
+        <TextView
+            android:id="@+id/rechercheIng"
+            android:text="Recherche par ingrédient"
+            android:textSize="25sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ffff4a27"
+            android:background="#ffffc13b"
+            android:layout_below="@+id/textePrincipal"
+            android:layout_marginTop="20sp"
+            android:padding="5dp"/>
+
+
+
+        <EditText
+            android:id="@+id/ingredientRentre"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:hint="Ecrivez votre ingrédient (ex: oeufs, sucre,...)"
+            android:inputType="textMultiLine"
+            android:lines= "1"
+            android:layout_below="@+id/rechercheIng"
+            android:layout_marginTop="10sp"
+            />
+
+
+        <TextView
+            android:id="@+id/RechType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Recherche par type de plat"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ffff4a27"
+            android:background="#ffffc13b"
+            android:layout_below="@+id/textePrincipal"
+            android:layout_marginTop="20sp"
+            android:padding="5dp"/>
+
+
+    <RadioGroup
+            android:id="@+id/groupeType"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/RechType"
+            android:layout_marginTop="15sp">
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Entrée"
+                android:textSize="17sp"
+                android:layout_marginLeft="15dp"
+                />
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Plat principal"
+                android:checked="false"
+                android:textSize="17sp"
+                android:layout_marginLeft="15dp"
+                />
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dessert"
+                android:checked="false"
+                android:textSize="17sp"
+                android:layout_marginLeft="15dp"
+                />
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/RechercherType"
+        android:layout_width="150sp"
+        android:layout_height="30sp"
+        android:text="Rechercher"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@id/groupeType"
+        android:layout_marginTop="30sp"
+        android:textColor="#ffff1512"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#ffffa421"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

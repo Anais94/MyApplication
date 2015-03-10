@@ -1,0 +1,49 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image_fond_activite_principale">
+
+    <TextView
+        android:id="@+id/titreP"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur Kuizto"
+        android:textSize="35sp"
+        android:textColor="#ff070103"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp" />
+
+    <Button
+        android:id="@+id/buttonRecette"
+        android:layout_width="120sp"
+        android:layout_height="55sp"
+        android:text="Consulter une recette"
+        android:textColor="#ffffcb0f"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:background="#ffb91223"
+        android:layout_below="@+id/titreP"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+         />
+    <Button
+        android:id="@+id/buttonRecherche"
+        android:background="#ffb91223"
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:text="Effectuer une recherche"
+        android:textColor="#ffffcb0f"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_below="@+id/buttonRecette"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    </RelativeLayout>

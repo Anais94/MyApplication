@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffd9f0e8"
+    tools:context="com.example.anas.myapplication.affichageRecette"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recipe"
+        android:text="Recette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#fff0122a"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/titreRecette"
+        android:text="titre de la recette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/recipe"
+        android:textColor="#ff326bf0"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/tpsPrep"
+        android:text="temps de préparation"
+        android:textStyle="bold"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/titreRecette"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark"
+
+        />
+
+    <TextView
+        android:id="@+id/duree"
+        android:text="durée"
+        android:textStyle="italic"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/typePlate"
+        android:layout_toRightOf="@+id/tpsPrep"
+        android:layout_toEndOf="@+id/tpsPrep" />
+
+    <TextView
+        android:id="@+id/min"
+        android:text="min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark"
+        android:layout_alignTop="@+id/duree"
+        android:layout_alignRight="@+id/duree"
+        android:layout_alignEnd="@+id/duree" />
+    <TextView
+        android:id="@+id/typePlate"
+        android:text="type de plat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tpsPrep"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark"
+ />
+
+    <TextView
+        android:id="@+id/platPrincipal"
+        android:text="plat principal"
+        android:textStyle="italic"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/listIng"
+        android:layout_toRightOf="@+id/tpsPrep"
+        android:layout_toEndOf="@+id/tpsPrep" />
+
+    <TextView
+        android:id="@+id/listIng"
+        android:text="Ingrédients"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/typePlate"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark"/>
+
+    <TextView
+        android:id="@+id/preparation"
+        android:text="Préparation :"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/listIng"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark"/>
+
+
+
+
+
+</RelativeLayout>

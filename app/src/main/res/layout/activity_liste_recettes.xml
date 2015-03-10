@@ -1,0 +1,86 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.anas.myapplication.ListeRecettes"
+    android:orientation="vertical"
+    android:background="#ffffe3c0"
+
+    >
+
+    <TextView
+        android:id="@+id/titreListe"
+        android:text="Liste des recettes"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffff1e29"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/entree"
+        android:text="Entrées"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffff1512"
+        android:background="#ffffa21a"
+        android:layout_below="@+id/titreListe"/>
+
+    <ListView
+        android:id="@+id/listeRecEnt"
+        android:layout_below="@+id/entree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        </ListView>
+
+    <TextView
+        android:id="@+id/plat"
+        android:text="Plats principaux"
+        android:textSize="25sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffff1512"
+        android:background="#ffffa21a"
+        android:layout_below="@+id/listeRecEnt"/>
+
+
+    <ListView
+        android:id="@+id/listePlatsPrinc"
+        android:layout_below="@+id/plat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/desserts"
+        android:text="Desserts"
+        android:textSize="25sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffff1512"
+        android:background="#ffffa21a"
+        android:layout_below="@+id/listePlatsPrinc"/>
+
+
+    <ListView
+        android:id="@+id/listeDesDesserts"
+        android:layout_below="@+id/desserts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</RelativeLayout>
