@@ -7,7 +7,7 @@ import android.view.MenuItem;
 
 
 public class Administrateur extends ActionBarActivity {
-    gdft
+    gdfta
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
