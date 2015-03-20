@@ -14,7 +14,7 @@ import java.util.Vector;
 
 public class MainActivity extends ActionBarActivity {
     //Attributs :
-    private Button boutonRech;
+
     private Button boutonRecette;
     private TextView titrePrincipal;
 
@@ -26,27 +26,12 @@ public class MainActivity extends ActionBarActivity {
         //On récupère les différents objets de l'activité main :
         titrePrincipal = (TextView) findViewById(R.id.titreP);
         boutonRecette = (Button) findViewById(R.id.buttonRecette);
-        boutonRech = (Button) findViewById(R.id.buttonRecherche);
+
 
         //On va créer des liens entre les boutons et les activités qui s'ouvrent.
         //Pour cela, on doit créer des intent.
 
-        //Intent 1 : Permet d'ouvrir l'activité CritereEtChoix lorsque
-        //l'on clique sur "effectuer une recherche"
-
-        boutonRech.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                //Le premier paramètre est le nom de l'activité actuelle
-                //Le second paramètre est le nom de l'activité de destination
-                Intent secondeActivite = new Intent(MainActivity.this, CritereEtChoix.class );
-                //On lance l'intent :
-                startActivity(secondeActivite);
-            }
-
-        });
-
-        // Intent 2 : Permet d'ouvrir l'activité avec la liste des recettes
+        // Intent : Permet d'ouvrir l'activité avec la liste des recettes
         // lorsque l'on clique sur "consulter une recette"
 
        boutonRecette.setOnClickListener(new View.OnClickListener(){
@@ -91,6 +76,8 @@ public class MainActivity extends ActionBarActivity {
         tripToastF [0] = 10; tripToastF[1] = 0 ; tripToastF[2] = 180;
         fourToast.ajoutDurPuiTemp(tripToastF);
 
+        toast.setContenu("toast_chevre");
+
         /**
          * Mousse au chocolat
          */
@@ -123,6 +110,8 @@ public class MainActivity extends ActionBarActivity {
         mousseChocolat.setAppareil(frigoMousse);
         mousseChocolat.setAppareil(mixeurMousse);
 
+        mousseChocolat.setContenu("mousse_chocolat");
+
         /**
          * Oeufs Mimosa
          */
@@ -152,6 +141,8 @@ public class MainActivity extends ActionBarActivity {
         plaqueOeufs.ajoutDurPuiNiv(tripOeufsP2);
         oeufsMimosa.setAppareil(frigoOeufs);
         oeufsMimosa.setAppareil(plaqueOeufs);
+
+        oeufsMimosa.setContenu("oeufs_mimosa");
 
         /**
          * Taboulé
@@ -184,6 +175,8 @@ public class MainActivity extends ActionBarActivity {
         tripTabP2[0] = 5; tripTabP2[1] = 0 ; tripTabP2[2] = 4;
         plaqueTab.ajoutDurPuiNiv(tripTabP1);
         plaqueTab.ajoutDurPuiNiv(tripTabP2);
+
+        taboule.setContenu("taboule");
 
         leRecetteOperations.open();
         leRecetteOperations.dbHelper.onUpgrade(leRecetteOperations.database,2,1);

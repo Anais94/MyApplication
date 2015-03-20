@@ -6,13 +6,13 @@
     android:layout_height="fill_parent"
     android:id="@+id/resultatRecherche"
     android:orientation="vertical"
-    android:background="#ffffe3c0">
+    android:background="#fffff7b9">
     <TextView
         android:id="@+id/titreRes"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Résultat de la recherche"
-        android:textColor="#ffff1e29"
+        android:textColor="#ff070103"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -27,8 +27,8 @@
         android:layout_marginTop="10sp"
         android:textSize="20sp"
         android:layout_marginLeft="10sp"
-        android:textColor="#ffff0511"
-        android:background="#ffffc13b"/>
+        android:textColor="#ffb91223"
+        android:background="#ffffcb0f"/>
     <TextView
         android:id="@+id/ing"
         android:layout_width="wrap_content"
@@ -53,8 +53,8 @@
         android:layout_marginTop="10sp"
         android:textSize="20sp"
         android:layout_marginLeft="10sp"
-        android:textColor="#ffff0511"
-        android:background="#ffffc13b"/>
+        android:textColor="#ffb91223"
+        android:background="#ffffcb0f"/>
     <TextView
         android:id="@+id/typ"
         android:layout_width="wrap_content"
@@ -80,6 +80,8 @@
 
 
     </ListView>
+
+
 
 
 </RelativeLayout>

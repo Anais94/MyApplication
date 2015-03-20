@@ -29,21 +29,9 @@
         android:textSize="17sp"
         android:background="#ffb91223"
         android:layout_below="@+id/titreP"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="100sp"
         android:layout_centerHorizontal="true"
          />
-    <Button
-        android:id="@+id/buttonRecherche"
-        android:background="#ffb91223"
-        android:layout_width="120sp"
-        android:layout_height="60sp"
-        android:text="Effectuer une recherche"
-        android:textColor="#ffffcb0f"
-        android:textStyle="bold"
-        android:textSize="17sp"
-        android:layout_below="@+id/buttonRecette"
-        android:layout_marginTop="20sp"
-        android:layout_centerHorizontal="true"
-        />
+
 
     </RelativeLayout>

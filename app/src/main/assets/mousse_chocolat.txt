@@ -1,0 +1,6 @@
+"Séparer les blancs des jaunes et battre les blancs pendant " + mixeurMousse.getInformations().get(0)[0] +" minutes." +
+"Faire fondre le chocolat avec un peu d'eau à la casserole au niveau " + plaqueMousse.getInformations().get(0)[2] +" pendant " +
+				plaqueMousse.getInformations().get(0)[0] + " minutes, puis le mélanger avec le chocolat"
+		+ "Incorporer 1/3 des blancs au chocolat en mélangeant rapidement, puis ajouter progressivement le reste des blancs en mélangeant délicatement. "
+		+"Réserver au frigidaire pendant "+frigoMousse.getInformations().get(0)[0]+" minutes"
+

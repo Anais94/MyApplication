@@ -10,6 +10,7 @@ public class Recette {
 	private Vector<Ingredient> lesIngredients;
 	private Vector<Appareil> lesAppareils;
 	private Vector<Etape> lesEtapes;
+	public String contenu;
 
 	// Constructeur de la classe Recette
 	public Recette(String unTitre, String unType, int unTpsPreparation) {
@@ -24,6 +25,11 @@ public class Recette {
 	// M�thode permettant d'affilier un ingr�dient � une recette 
 	public void setIngredient(Ingredient ing) {
 		lesIngredients.add(ing);
+	}
+	
+	// M�thode permettant d'ajouter le contenu d'une recette
+	public void setContenu(String unContenu) {
+		contenu = unContenu;
 	}
 
 	// M�thode pour r�cup�rer l'ensemble des ingr�dients de la recette
@@ -58,15 +64,10 @@ public class Recette {
 		return tpsPreparation;
 	}
 
-	public String getContenu() {
+    public String getTpsStringPreparation() { return Integer.toString(tpsPreparation);}
 
-		String str = "";
-		
-		for (int i  = 0; i<lesEtapes.size(); i++){
-			str = str + "\n" + lesEtapes.get(i).getContenu();
-		}
-		
-		return str;
+	public String getContenu() {
+return contenu;
 	}
 
 

@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class ListeRecettes extends ActionBarActivity {
     private ListView listePlats;
     private ListView listeDesserts;
     private ArrayAdapter<String> listAdapter;
+    private Button rechRec =null;
 
     final String RECETTE_SELECT = "re";
 
@@ -28,6 +30,20 @@ public class ListeRecettes extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_liste_recettes);
+
+        rechRec=(Button)  findViewById(R.id.recherche);
+
+        rechRec.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Le premier paramètre est le nom de l'activité actuelle
+                //Le second paramètre est le nom de l'activité de destination
+                Intent secondeActivite = new Intent(ListeRecettes.this, CritereEtChoix.class );
+                //On lance l'intent :
+                startActivity(secondeActivite);
+            }
+
+        });
 
         //On récupère les éléments de l'activité correspondante :
         //On commence par compléter chaque liste de l'activité :

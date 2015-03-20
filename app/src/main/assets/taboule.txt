@@ -1,0 +1,8 @@
+Mettre la semoule dans un saladier. 
+Chauffer l'eau à la casserole au niveau @@plaqueTab.getInformations().get(0)[2]@@ +" pendant " + plaqueTab.getInformations().get(0)[0] + " minutes." +
+	"Lorsque l'eau bout, verser l'eau sur la semoule et mélanger. La semoule gonfle."
+	+ "Couper la tomate, le poivron, la dinde en petit morceaux." + 
+				"\n" + "Faire cuire les morceaux de dinde à la poele, avec un peu d'huile, au niveau "+ plaqueTab.getInformations().get(1)[2] + " pendant " + plaqueTab.getInformations().get(1)[0] + " minutes." +
+		 "Mélanger la semoule, la tomate, le poivron, les morceaux de dinde. Rajouter un peu de menthe et des raisins secs si vous en avez, et y verser le jus d'un demi citron."+
+				"\n" + "Placez votre saladier au réfrigérateur pendant " + frigoTab.getInformations().get(0)[0]+ " minutes.
+

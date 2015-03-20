@@ -1,0 +1,5 @@
+Prechauffer le four à " + fourToast.getInformations().get(0)[2] +"°C.+
+"Couper la pomme en douze quartiers et faites-les cuire à la poële au niveau " + plaqueToast.getInformations().get(0)[2] + " pendant " + plaqueToast.getInformations().get(0)[0] + " minutes.";
+"Disposer trois quartiers de pomme par tranche de pain puis ajouter une tranche de chèvre. " + "\n" +
+"Mettre au four pendant "+ fourToast.getInformations().get(0)[0]+ " minutes.";
+

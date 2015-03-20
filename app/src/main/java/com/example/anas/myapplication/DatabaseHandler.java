@@ -30,6 +30,7 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 	private static final String TITRE_ING = "TITRE";
 	private static final String INGREDIENT = "INGREDIENT";
 	private static final String QUANTITE = "QUANTITE";
+    private static final String UNITE = "UNITE";
 
 
 	// Requ�te SQL de cr�ation de la table "RECETTES" dans la base de donn�es 
@@ -45,8 +46,9 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 	private static final String REQUETE_CREATION_TABLE_ING = 
 			"CREATE TABLE " + TABLE_REC_ING + 
 			"(" + TITRE_ING + " TEXT, " +
-			INGREDIENT + " TEXT NOT NULL, " +  
-			QUANTITE + " REAL) ;";
+			INGREDIENT + " TEXT NOT NULL, " +
+                    UNITE + " TEXT, " +
+                    QUANTITE + " REAL) ;";
 
 	public static DatabaseHandler getInstance(Context context) {
 
@@ -123,6 +125,10 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 	public static String getQuantite() {
 		return QUANTITE;
 	}
+
+    public static String getUnite() {
+        return UNITE;
+    }
 
 	public static String getTableRecIng() {
 		return TABLE_REC_ING;

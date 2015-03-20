@@ -9,5 +9,6 @@
     <string name="title_activity_resultat_recherche">ResultatRecherche</string>
     <string name="title_activity_liste_recettes">ListeRecettes</string>
     <string name="title_activity_affichage_recette">affichageRecette</string>
+    <string name="title_activity_administrateur">Administrateur</string>
 
 </resources>

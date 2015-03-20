@@ -1,0 +1,6 @@
+"Faire chauffer l'eau dans une casserole au niveau " + plaqueOeufs.getInformations().get(0)[2] + " pendant " + plaqueOeufs.getInformations().get(0)[0] + " minutes." +
+		"Mettre les deux oeufs dans la casserole au niveau " + plaqueOeufs.getInformations().get(1)[2] + " pendant " + plaqueOeufs.getInformations().get(1)[0] + " minutes." +
+		"Retirer les oeufs de la casserole et attendre qu'ils refroidissent." + 
+				"\n"+"Retirer la coque des oeufs. Les couper en deux, retirer le jaune." 
+				+ "\n" + "Mélanger le thon, la mayonnaise et le jaune, et replacer le mélange dans le creux laissé par le jaune d'oeuf."
+		 +"Réserver au frigidaire pendant "+frigoOeufs.getInformations().get(0)[0]+" minutes";
