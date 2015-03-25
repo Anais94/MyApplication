@@ -11,7 +11,7 @@ import android.content.Intent;
 
 import java.util.Vector;
 
-
+// Cette classe correspond la
 public class MainActivity extends ActionBarActivity {
     //Attributs :
 

@@ -31,6 +31,7 @@
         android:textSize="18sp"/>
 
     <EditText
+        android:id="@+id/titreRecette"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/titreR"
@@ -67,7 +68,7 @@
             android:layout_width="wrap_content"
             android:text="Entrée"
             android:textSize="17sp"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="10dp"
             />
         <RadioButton
             android:layout_width="wrap_content"
@@ -75,7 +76,7 @@
             android:text="Plat principal"
             android:checked="false"
             android:textSize="17sp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="10dp"
             />
         <RadioButton
             android:layout_width="fill_parent"
@@ -83,9 +84,11 @@
             android:text="Dessert"
             android:checked="false"
             android:textSize="17sp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="10dp"
             />
     </RadioGroup>
+
+
 
     <TextView
         android:id="@+id/dureeR"
@@ -100,11 +103,11 @@
 
     <EditText
         android:id="@+id/tps"
-        android:text="durée"
         android:textStyle="italic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
+        android:inputType="number"
         android:textColor="#ff070103"
         android:layout_alignBaseline="@+id/dureeR"
         android:layout_toEndOf="@+id/dureeR"
@@ -112,52 +115,226 @@
         android:hint="temps en min"
         android:layout_marginLeft="10sp" />
 
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/dureeR"
+        >
+
     <TextView
         android:id="@+id/ingdt1"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_below="@+id/dureeR"
-        android:layout_marginTop="15sp"
         android:text="ingrédient 1"
         android:textStyle="bold"
         android:textColor="#ffb91223"
         android:textSize="18sp"/>
 
     <EditText
-        android:id="@+id/tktIngdt1"
-        android:text="Rentrez votre ingrédient"
+        android:id="@+id/quantite1"
         android:textStyle="italic"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="80sp"
+        android:layout_height="35sp"
+        android:inputType="number"
         android:textSize="18sp"
         android:textColor="#ff070103"
         android:layout_alignBaseline="@+id/ingdt1"
         android:layout_toRightOf="@+id/ingdt1"
-        android:hint="temps en min"
+        android:hint="quantité"
         android:layout_marginLeft="10sp" />
+
+        <Spinner
+            android:id="@+id/unite"
+            android:layout_width="40sp"
+            android:layout_height="25sp"
+            android:background="#ffffbc8d"
+            android:layout_alignBaseline="@+id/txtIngdt1"
+            android:layout_toRightOf="@+id/txtIngdt1"
+            android:layout_marginLeft="10sp"
+            android:text="unité">
+            </Spinner>
+        <EditText
+            android:id="@+id/nom1"
+            android:textStyle="italic"
+            android:layout_width="80sp"
+            android:layout_height="35sp"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:textColor="#ff070103"
+            android:layout_alignBaseline="@+id/unite"
+            android:layout_toRightOf="@+id/unite"
+            android:hint="nom"
+            android:layout_marginLeft="10sp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        >
 
     <TextView
         android:id="@+id/ingdt2"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_below="@+id/ingdt1"
-        android:layout_marginTop="15sp"
         android:text="ingrédient 2"
         android:textStyle="bold"
         android:textColor="#ffb91223"
         android:textSize="18sp"/>
 
     <EditText
-        android:id="@+id/txtIngdt2"
-        android:text="Rentrez votre ingrédient"
+        android:id="@+id/quantite2"
         android:textStyle="italic"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="80sp"
+        android:inputType="number"
+        android:layout_height="35sp"
         android:textSize="18sp"
         android:textColor="#ff070103"
         android:layout_alignBaseline="@+id/ingdt2"
         android:layout_toEndOf="@+id/ingdt2"
         android:layout_toRightOf="@+id/ingdt2"
-        android:hint="temps en min"
+        android:hint="quantité"
         android:layout_marginLeft="10sp" />
+
+        <Spinner
+            android:id="@+id/unite2"
+            android:layout_width="40sp"
+            android:layout_height="25sp"
+            android:background="#ffffbc8d"
+            android:layout_alignBaseline="@+id/txtIngdt1"
+            android:layout_toRightOf="@+id/txtIngdt1"
+            android:layout_marginLeft="10sp"
+            android:text="unité">
+        </Spinner>
+        <EditText
+            android:id="@+id/nom2"
+            android:textStyle="italic"
+            android:layout_width="80sp"
+            android:layout_height="35sp"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:textColor="#ff070103"
+            android:layout_alignBaseline="@+id/unite2"
+            android:layout_toRightOf="@+id/unite2"
+            android:hint="nom"
+            android:layout_marginLeft="10sp" />
+</LinearLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/ok"
+        android:layout_below="@+id/linear2"
+        android:text="ok !"
+        android:background="#ffb91223"
+        android:textColor="#ffffcb0f"/>
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        >
+
+        <TextView
+            android:id="@+id/ingdt3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ingrédient 3"
+            android:textStyle="bold"
+            android:textColor="#ffb91223"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/quantite3"
+            android:textStyle="italic"
+            android:layout_width="80sp"
+            android:inputType="number"
+            android:layout_height="35sp"
+            android:textSize="18sp"
+            android:textColor="#ff070103"
+            android:layout_toEndOf="@+id/ingdt3"
+            android:layout_toRightOf="@+id/ingdt3"
+            android:hint="quantité"
+            android:layout_marginLeft="10sp" />
+
+        <Spinner
+            android:id="@+id/unite3"
+            android:layout_width="40sp"
+            android:layout_height="25sp"
+            android:background="#ffffbc8d"
+            android:layout_alignBaseline="@+id/txtIngdt3"
+            android:layout_toRightOf="@+id/txtIngdt3"
+            android:layout_marginLeft="10sp"
+            android:text="unité">
+        </Spinner>
+        <EditText
+            android:id="@+id/nom3"
+            android:textStyle="italic"
+            android:layout_width="80sp"
+            android:layout_height="35sp"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:textColor="#ff070103"
+            android:layout_toRightOf="@+id/unite3"
+            android:hint="nom"
+            android:layout_marginLeft="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3"
+        >
+
+        <TextView
+            android:id="@+id/ingdt4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ingrédient 4"
+            android:textStyle="bold"
+            android:textColor="#ffb91223"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/quantite4"
+            android:textStyle="italic"
+            android:layout_width="80sp"
+            android:inputType="number"
+            android:layout_height="35sp"
+            android:textSize="18sp"
+            android:textColor="#ff070103"
+            android:layout_toEndOf="@+id/ingdt4"
+            android:layout_toRightOf="@+id/ingdt4"
+            android:hint="quantité"
+            android:layout_marginLeft="10sp" />
+
+        <Spinner
+            android:id="@+id/unite4"
+            android:layout_width="40sp"
+            android:layout_height="25sp"
+            android:background="#ffffbc8d"
+            android:layout_toRightOf="@+id/txtIngdt4"
+            android:layout_marginLeft="10sp"
+            android:text="unité">
+        </Spinner>
+        <EditText
+            android:id="@+id/nom4"
+            android:textStyle="italic"
+            android:layout_width="80sp"
+            android:layout_height="35sp"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:textColor="#ff070103"
+            android:layout_toRightOf="@+id/unite4"
+            android:hint="nom"
+            android:layout_marginLeft="10sp" />
+    </LinearLayout>
+
+
 </RelativeLayout>
