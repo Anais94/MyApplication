@@ -11,11 +11,12 @@ import android.content.Intent;
 
 import java.util.Vector;
 
-// Cette classe correspond la
+// Cette classe correspond à la page d'accueil de l'application
 public class MainActivity extends ActionBarActivity {
     //Attributs :
 
     private Button boutonRecette;
+    private Button boutonAjouter;
     private TextView titrePrincipal;
 
     @Override
@@ -26,6 +27,7 @@ public class MainActivity extends ActionBarActivity {
         //On récupère les différents objets de l'activité main :
         titrePrincipal = (TextView) findViewById(R.id.titreP);
         boutonRecette = (Button) findViewById(R.id.buttonRecette);
+        boutonAjouter = (Button)  findViewById(R.id.buttonAdd);
 
 
         //On va créer des liens entre les boutons et les activités qui s'ouvrent.
@@ -45,6 +47,29 @@ public class MainActivity extends ActionBarActivity {
         }
 
     });
+        boutonAjouter.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Le premier paramètre est le nom de l'activité actuelle
+                //Le second paramètre est le nom de l'activité de destination
+                Intent secondeActivite = new Intent(MainActivity.this, Administrateur.class );
+                //On lance l'intent :
+                startActivity(secondeActivite);
+            }
+
+        });
+
+        boutonRecette.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Le premier paramètre est le nom de l'activité actuelle
+                //Le second paramètre est le nom de l'activité de destination
+                Intent secondeActivite = new Intent(MainActivity.this, ListeRecettes.class );
+                //On lance l'intent :
+                startActivity(secondeActivite);
+            }
+
+        });
 
         final RecetteOperations leRecetteOperations = new RecetteOperations(this);
 

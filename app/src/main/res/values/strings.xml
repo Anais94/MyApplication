@@ -10,5 +10,7 @@
     <string name="title_activity_liste_recettes">ListeRecettes</string>
     <string name="title_activity_affichage_recette">affichageRecette</string>
     <string name="title_activity_administrateur">Administrateur</string>
+    <string name="title_activity_preparation">Preparation</string>
+    <string name="title_activity_ecriture">Ecriture</string>
 
 </resources>

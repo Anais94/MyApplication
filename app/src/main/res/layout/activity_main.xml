@@ -29,9 +29,23 @@
         android:textSize="17sp"
         android:background="#ffb91223"
         android:layout_below="@+id/titreP"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="70sp"
         android:layout_centerHorizontal="true"
          />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="120sp"
+        android:layout_height="55sp"
+        android:text="Ajouter une recette"
+        android:textColor="#ffffcb0f"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:background="#ffb91223"
+        android:layout_below="@+id/buttonRecette"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        />
 
 
     </RelativeLayout>

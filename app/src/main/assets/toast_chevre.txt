@@ -1,5 +1,20 @@
-Prechauffer le four à " + fourToast.getInformations().get(0)[2] +"°C.+
-"Couper la pomme en douze quartiers et faites-les cuire à la poële au niveau " + plaqueToast.getInformations().get(0)[2] + " pendant " + plaqueToast.getInformations().get(0)[0] + " minutes.";
-"Disposer trois quartiers de pomme par tranche de pain puis ajouter une tranche de chèvre. " + "\n" +
-"Mettre au four pendant "+ fourToast.getInformations().get(0)[0]+ " minutes.";
+﻿<html>
 
+<body>
+
+<b>1</b> Préchauffer le four à 180°C. <br/> 
+
+<b>2</b> Couper la pomme en douze quartiers et faites-les cuire à la poële au niveau 5 pendant 3 minutes. <br/> 
+
+<b>3</b> Disposer trois quartiers de pomme par tranche de pain puis ajouter une tranche de chèvre. <br/> 
+
+<b>4</b> Mettre au four pendant 10 minutes. <br/> 
+
+<p>
+<img 
+src="toast_chevre.jpg" alt="Mousse au chocolat" border="2" align=center />
+</p>
+
+</body>
+
+</html>

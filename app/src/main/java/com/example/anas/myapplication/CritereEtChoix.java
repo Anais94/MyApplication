@@ -26,6 +26,8 @@ import java.util.Vector;
 
 public class CritereEtChoix extends ActionBarActivity {
 
+    // On crée les différents attributs
+
     private RelativeLayout grillePrincipale = null;
 
     private TextView titre = null;

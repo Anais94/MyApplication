@@ -41,6 +41,14 @@
             android:name=".Administrateur"
             android:label="@string/title_activity_administrateur" >
         </activity>
+        <activity
+            android:name=".Preparation"
+            android:label="@string/title_activity_preparation" >
+        </activity>
+        <activity
+            android:name=".Ecriture"
+            android:label="@string/title_activity_ecriture" >
+        </activity>
     </application>
 
 </manifest>

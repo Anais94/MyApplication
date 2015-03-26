@@ -1,6 +1,20 @@
-"SÃ©parer les blancs des jaunes et battre les blancs pendant " + mixeurMousse.getInformations().get(0)[0] +" minutes." +
-"Faire fondre le chocolat avec un peu d'eau Ã  la casserole au niveau " + plaqueMousse.getInformations().get(0)[2] +" pendant " +
-				plaqueMousse.getInformations().get(0)[0] + " minutes, puis le mÃ©langer avec le chocolat"
-		+ "Incorporer 1/3 des blancs au chocolat en mÃ©langeant rapidement, puis ajouter progressivement le reste des blancs en mÃ©langeant dÃ©licatement. "
-		+"RÃ©server au frigidaire pendant "+frigoMousse.getInformations().get(0)[0]+" minutes"
+<html>
+
+<body>
+
+<b>1</b> Séparer les blancs des jaunes et battre les blancs pendant 5 minutes. <br/> 
+
+<b>2</b> Faire fondre le chocolat avec un peu d'eau à la casserole au niveau 3 pendant 5 minutes, puis le mélanger avec le chocolat. <br/> 
+	
+<b>3</b> Incorporer 1/3 des blancs au chocolat en mélangeant rapidement, puis ajouter progressivement le reste des blancs en mélangeant délicatement. <br/> 
+
+<b>4</b> Réserver au frigidaire pendant 180 minutes. <br/> 
+
+
+<img src="mousse_chocolat.jpg" alt="Mousse au chocolat" border="2" align="center"/>
+
+
+</body>
+ 
+</html>
 
